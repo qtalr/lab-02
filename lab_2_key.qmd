@@ -1,0 +1,13 @@
+---
+title: "Reading, inspecting, and writing data"
+author: "Jerid Francom"
+date-modified: today
+format: html
+bibliography: [bibliography.bib, packages.bib]
+biblio-style: apalike
+link-citations: true
+---
+
+# Title
+
+(key)
