@@ -1,0 +1,9 @@
+attribute,description
+Resource name,MASC (Manually Annotated Sub-Corpus of the American National Corpus).
+Data source,"https://anc.org/data/masc/about/, 	https://doi.org/10.35111/ctg7-5698"
+Data sampling frame,"American English corpus covering a wide range of genres of written and spoken language data."
+Data collection date(s),Since 1990.
+Data format,"All annotations were either manually produced or hand-validated and represented in ISO-GrAF standoff format (XML). Plain text files are also provided."
+Data schema,"The data are segmented into minimal regions spanning the primary data. Minimal regions are identified as the smallest unit any of the tokenizations applied to data references. Token annotations reference these regions as appropriate. Sentences reference regions in primary data."
+License,"CC BY 3.0 US"
+Attribution,"Ide, Nancy, et al. Manually Annotated Sub-Corpus Third Release LDC2013T12. Web Download. Philadelphia: Linguistic Data Consortium, 2013."

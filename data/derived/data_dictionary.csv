@@ -1,0 +1,10 @@
+variable,name,variable_type,description
+doc_id,Document ID,numeric,Unique identifier for each document
+description,Description,categorical,Description of the content of the document
+modality,Modality,categorical,The form in which the document is presented (written or spoken)
+genre,Genre,categorical,The category or type of the document
+domain,Domain,categorical,The subject or field to which the document belongs
+term_num,Term Number,numeric,Index number term per document
+term,Term,categorical,Individual word forms in the document
+lemma,Lemma,categorical,Base or dictionary form of the term
+pos,Part of Speech,categorical,Grammatical category of the term (modified PENN Treebank tagset)

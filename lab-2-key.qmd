@@ -1,0 +1,143 @@
+---
+title: "Reading, inspecting, and writing data"
+author: "Jerid Francom"
+date-modified: today
+format: html
+bibliography: [bibliography.bib, packages.bib]
+biblio-style: apalike
+link-citations: true
+---
+
+# Overview
+
+## About the data
+
+```{r}
+#| label: load-packages
+
+# Load packages
+library(readr)   # for reading and writing data
+library(dplyr)   # for data manipulation
+```
+
+1. What is the name of the data source?
+
+The data for this lab comes from the [Manually-Annotated Subcorpus (MASC)](https://anc.org/data/masc/about/) [@Ide2013]. 
+
+The data origin is seen below: 
+
+```{r}
+#| label: read-data-origin
+#| echo: false
+
+# Read and print the data origin file
+read_csv("data/original/data_origin.csv")
+```
+
+2. Where did it come from?
+
+The MASC is a annotated subset of the American National Corpus.
+
+3. What is the sampling frame?
+
+The corpus is of American English covering a wide range of genres since the 1990s.
+
+## Inspect the data
+
+The data dictionary is seen below:
+
+```{r}
+#| label: read-data-dictionary
+#| echo: false
+#| message: false
+
+# Read and print the data dictionary
+read_csv("data/derived/data_dictionary.csv")
+```
+
+Here is a table version of the data dictionary in Table \@ref(tab:data-dictionary).
+
+```{r}
+#| label: data-dictionary
+#| echo: false
+#| message: false
+
+# Load packages
+library(knitr)   # for tables
+
+# Read and print the data dictionary
+read_csv("data/derived/data_dictionary.csv") |>
+  kable(caption = "Data dictionary for the MASC data.")
+```
+
+1. How many variables are there? 
+
+From the data dictionary, we can see that there are 9 variables.
+
+2. What are the variable types?
+
+From the data dictionary, we can see that there are 2 numeric variables and 7 character variables.
+
+```{r}
+#| label: read-data
+#| echo: false
+#| message: false
+
+# Read the data
+masc_df <- read_csv("data/derived/data.csv")
+```
+
+After loading the dataset into R, we can see that the dataset has almost 600k observations (591,036). 
+
+```{r}
+#| label: inspect-data
+
+# Preview
+glimpse(masc_df)
+```
+
+## Subset the data
+
+In this section, I will subset the data to only include the columns `modality`, `genre`, `term`, and `pos` for only adjectives (`JJ`, `JJR`, and `JJS`).
+
+```{r}
+#| label: subset-data
+
+# Subset the data
+masc_adj_df <- 
+  masc_df |> # pipe the data into the next function
+  select(modality, genre, term, pos) |> # select the columns
+  filter(pos %in% c("JJ", "JJR", "JJS")) # filter the rows
+
+# Preview
+glimpse(masc_adj_df)
+```
+
+1. How does the subsetted data differ from the original data?
+
+The subsetted data only contains adjectives, while the original data contained all parts of speech. And now there is only a subset of the columns.
+
+2. What are the dimensions of the subsetted data?
+
+The subsetted data has 4 columns and 33,994 observations. The original data had 9 columns and 591,036 observations. 
+
+3. What are the variable types?
+
+All of the variables are character variables.
+
+## Write the data
+
+I will write the `masc_adj_df` data to a csv file with the name `masc_adj.csv`. It will add it to the `data/derived` folder.
+
+```{r}
+#| label: write-data
+
+# Write the data
+write_csv(masc_adj_df, "data/derived/masc_adj.csv")
+```
+
+## Self-assessment
+
+In this lab I learned how to read, inspect, subset, and write data. I also learned how to use the pipe operator (`|>`) to make my code more readable. 
+
+I found reading and creating file paths to be the most challenging part of this lab. I also found the pipe operator to be a little confusing at first, but I think I am starting to get the hang of it.
