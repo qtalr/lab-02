@@ -14,6 +14,7 @@ link-citations: true
 
 ```{r}
 #| label: load-packages
+#| message: false
 
 # Load packages
 library(readr)   # for reading and writing data
@@ -29,6 +30,7 @@ The data origin is seen below:
 ```{r}
 #| label: read-data-origin
 #| echo: false
+#| message: false
 
 # Read and print the data origin file
 read_csv("data/original/data_origin.csv")
@@ -55,10 +57,11 @@ The data dictionary is seen below:
 read_csv("data/derived/data_dictionary.csv")
 ```
 
-Here is a table version of the data dictionary in Table \@ref(tab:data-dictionary).
+Here is a table version of the data dictionary in @tbl-data-dictionary.
 
 ```{r}
-#| label: data-dictionary
+#| label: tbl-data-dictionary
+#| tbl-cap: "Data dictionary for the MASC data."
 #| echo: false
 #| message: false
 
@@ -67,7 +70,7 @@ library(knitr)   # for tables
 
 # Read and print the data dictionary
 read_csv("data/derived/data_dictionary.csv") |>
-  kable(caption = "Data dictionary for the MASC data.")
+  kable()
 ```
 
 1. How many variables are there? 
@@ -76,7 +79,7 @@ From the data dictionary, we can see that there are 9 variables.
 
 2. What are the variable types?
 
-From the data dictionary, we can see that there are 2 numeric variables and 7 character variables.
+From the data dictionary, we can see that there are 2 numeric variables and 7 categorical variables.
 
 ```{r}
 #| label: read-data
@@ -98,7 +101,7 @@ glimpse(masc_df)
 
 ## Subset the data
 
-In this section, I will subset the data to only include the columns `modality`, `genre`, `term`, and `pos` for only adjectives (`JJ`, `JJR`, and `JJS`).
+In this section, I will subset the data to only include the columns `modality`, `genre`, `term`, and `pos` for only adjectives (`JJ`, `JJR`, and `JJS` --see the [PENN tagset documentation](https://catalog.ldc.upenn.edu/docs/LDC95T7/cl93.html)).
 
 ```{r}
 #| label: subset-data
@@ -138,6 +141,9 @@ write_csv(masc_adj_df, "data/derived/masc_adj.csv")
 
 ## Self-assessment
 
-In this lab I learned how to read, inspect, subset, and write data. I also learned how to use the pipe operator (`|>`) to make my code more readable. 
+In this lab I learned how to read, inspect, subset, and write data with `readr` [@R-readr] and `dplyr` [@R-dplyr]. I also learned how to use the pipe operator (`|>`) to make my code more readable. 
 
 I found reading and creating file paths to be the most challenging part of this lab. I also found the pipe operator to be a little confusing at first, but I think I am starting to get the hang of it.
+
+## References
+
