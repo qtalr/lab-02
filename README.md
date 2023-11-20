@@ -66,14 +66,14 @@ Note: You may find the PENN 'pos' tagset useful to help you understand the value
 
 ## Assessing your progress
 
-1. Add a section which describes your learning in this lab
+1. Add a section which describes your learning in this lab.
 
 Some questions to consider: 
 
   - What did you learn?
   - What did you find most/ least challenging?
   - What resources did you consult? 
-    - Instructor? Websites (provide links)?
+    - Instructor? R or Quarto documentation, Websites (provide links)?
   - What more would you like to know about reading, inspecting, and/ or writing data in R and/ or Quarto?
     - Find potential resources you might consult to continue your learning. Provide links and a brief description of the resource.
 
