@@ -64,7 +64,7 @@ Note: You may find the PENN 'pos' tagset useful to help you understand the value
 
 7. (optional) Explore adding a markdown table to your Quarto document and make a cross-reference in your summary prose. The `knitr` package provides a function `kable()` for creating markdown tables from rectangular data. You can read more about [creating tables from R data frames](https://quarto.org/docs/authoring/tables.html#computations) on the Quarto website.
 
-### Assessing your progress
+## Assessing your progress
 
 1. Add a section which describes your learning in this lab
 
