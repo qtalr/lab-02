@@ -42,16 +42,19 @@ In the repository for this lab, you will find three data files corresponding to 
   - Write the data
 
 2. In the section "About the data", use strategies from Recipe 2 to load the necessary packages to read and inspect rectangular data and read the data origin and data dictionary files. Then, write a paragraph describing the data. Include the following information:
+
    1. What is the name of the data source?
    2. Where did it come from?
    3. What is the sampling frame?
 
 3. In the section "Inspect the data", read and inspect the dataset. Write a paragraph describing the data. Include the following information:
+
    1. How many variables are included?
    2. What are the variable types?
    3. How many observations are included?
 
 4. In the section "Subset the data", use strategies from Recipe 2 to subset the data to include some combination of columns and rows that you could find relevant to extract from the original dataset. Write a paragraph describing the data you have subsetted. Include the following information:
+
    1. How does the subsetted data differ from the original data?
    2. What are the dimensions of the subsetted data?
    3. What are the variable types?
