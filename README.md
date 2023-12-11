@@ -1,4 +1,4 @@
-# Lab 2: Reading, inspecting, and writing data
+# Lab 02: Reading, inspecting, and writing data
 
 <!-- 
 - [ ] Create dev container
@@ -24,7 +24,7 @@
   - Provide the author: \<Your Name\>
 2. Render the Quarto document (without changes)
   - Click the 'Render' button on the RStudio toolbar
-  - Save the Quarto file with the name `lab-2.qmd`.
+  - Save the Quarto file with the name `lab-02.qmd`.
 
 ### Reading, inspecting, and writing data
 
