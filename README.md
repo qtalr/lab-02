@@ -1,9 +1,5 @@
 # Lab 02: Reading, inspecting, and writing data
 
-<!-- 
-- [ ] Create dev container
--->
-
 ## Preparation
 
 - Read/ annotate: [Recipe \#2](https://qtalr.github.io/qtalrkit/articles/recipe-2.html). You can refer back to this document to help you at any point during this lab activity.
@@ -28,11 +24,11 @@
 
 ### Reading, inspecting, and writing data
 
-In the repository for this lab, you will find three data files corresponding to the data origin, data dictionary, and the data itself. 
+In the repository for this lab, you will find three data files corresponding to the data origin, data dictionary, and the data itself.
 
   - `data_origin.csv`
   - `data_dictionary.csv`
-  - `data.csv` 
+  - `data.csv`
 
 1. Create the following sections in your `.qmd` document:
 
@@ -59,11 +55,11 @@ In the repository for this lab, you will find three data files corresponding to 
    2. What are the dimensions of the subsetted data?
    3. What are the variable types?
 
-Note: You may find the PENN 'pos' tagset useful to help you understand the values of the 'pos' variable. You can find the tagset [here](https://catalog.ldc.upenn.edu/docs/LDC95T7/cl93.html). 
+Note: You may find the PENN 'pos' tagset useful to help you understand the values of the 'pos' variable. You can find the tagset [here](https://catalog.ldc.upenn.edu/docs/LDC95T7/cl93.html).
 
 5. In the section "Write the data", use strategies from Recipe 2 to write the subsetted data to a file. Describe where the file is located and what format it is in.
 
-6. Render the `.qmd` as a PDF or a Word document
+6. Render the `.qmd` as a PDF.
 
 7. (optional) Explore adding a markdown table to your Quarto document and make a cross-reference in your summary prose. The `knitr` package provides a function `kable()` for creating markdown tables from rectangular data. You can read more about [creating tables from R data frames](https://quarto.org/docs/authoring/tables.html#computations) on the Quarto website.
 
@@ -71,18 +67,18 @@ Note: You may find the PENN 'pos' tagset useful to help you understand the value
 
 1. Add a section which describes your learning in this lab.
 
-Some questions to consider: 
+Some questions to consider:
 
   - What did you learn?
   - What did you find most/ least challenging?
-  - What resources did you consult? 
+  - What resources did you consult?
     - Instructor? R or Quarto documentation, Websites (provide links)?
   - What more would you like to know about reading, inspecting, and/ or writing data in R and/ or Quarto?
     - Find potential resources you might consult to continue your learning. Provide links and a brief description of the resource.
 
 ## Submission for feedback
 
-1. To prepare your lab report for submission you will need to render your Quarto document to PDF or Word. 
+1. To prepare your lab report for submission you will need to render your Quarto document to PDF or Word.
 2. Download this file to your local computer.
 3. Submit your report as described by your instructor.
 
