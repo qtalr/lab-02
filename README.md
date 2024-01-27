@@ -1,4 +1,4 @@
-# Lab 02: Reading, inspecting, and writing data
+# Lab 02: Dive into datasets
 
 ## Preparation
 
@@ -16,7 +16,7 @@
 ### Getting started
 
 1. Create a Quarto document using the RStudio toolbar
-  - Provide the title: "Reading, inspecting, and writing data"
+  - Provide the title: "Lab 02: Dive into datasets"
   - Provide the author: \<Your Name\>
 2. Render the Quarto document (without changes)
   - Click the 'Render' button on the RStudio toolbar
